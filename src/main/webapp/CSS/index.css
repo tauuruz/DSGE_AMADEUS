@@ -1,0 +1,55 @@
+#CuadroInicio{
+    text-align: center;
+    margin-top: 5em;
+    margin-left: 25em;
+    margin-bottom: 3em;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    background: rgba(0, 0, 0, .6);
+    box-shadow: 0 15px 25px 25px rgba(228, 121, 20, 0.856);
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+}
+
+
+.formulario{
+    display: block;
+    margin-top: 1em;
+}
+
+.formulario label{
+    font-weight: bold;
+}
+
+.formulario input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(8, 8, 8);
+    border: none;
+    border-bottom: 2px solid rgb(231, 94, 2);
+    background: transparent;
+    outline: none;
+}
+
+#enviar{
+    margin-top: 2em;
+    color: rgb(8, 8, 8);
+    border: none;
+    font-weight: bold;
+}
+
+#CuadroInicio a:hover{  
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+.boton{
+    font-weight: bold;
+}

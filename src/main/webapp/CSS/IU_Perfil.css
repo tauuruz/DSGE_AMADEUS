@@ -1,0 +1,57 @@
+body{
+    background-color: rgba(228, 121, 20);
+    
+}
+
+h4{
+    margin-top: 3em;
+    margin-left: 15em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+#CuadroInicio{
+    margin-left: 25em;
+    margin-bottom: 3em;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    background: rgba(107, 102, 102, 0.8);
+    box-shadow: 0 15px 25px 25px rgba(19, 207, 198, 0.8);
+}
+
+
+span{
+    font-weight: bold;
+}
+
+.input2{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(8, 8, 8);
+    border: none;
+    border-bottom: 2px solid rgb(231, 94, 2);
+    background: transparent;
+    outline: none;
+}
+
+#tabla{
+    margin-left: 1em;
+}
+
+.input3{
+    font-size: 20px;
+    padding-top: 2em;
+    padding-left: 10em;
+}
+
+
+a:hover{  
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+

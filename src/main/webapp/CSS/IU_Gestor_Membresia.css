@@ -1,0 +1,48 @@
+body{
+    background-color: rgba(228, 121, 20);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#CuadroInicio{
+    text-align: center;
+    margin-top: 5em;
+    margin-left: 25em;
+    margin-bottom: 3em;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    background: rgba(107, 102, 102, 0.8);
+    box-shadow: 0 15px 25px 25px rgba(19, 207, 198, 0.8);
+}
+
+#CuadroInicio h2{
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration:underline;
+}
+
+#CuadroInicio p, #CuadroInicio li{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#CuadroInicio li{
+    list-style: none;
+}
+
+
+#CuadroInicio button{
+    margin-top: 3em;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#CuadroInicio a:hover{  
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
