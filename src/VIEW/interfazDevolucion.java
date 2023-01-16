@@ -9,7 +9,7 @@ import java.awt.Font;
 import javax.swing.SwingConstants;
 
 import MODEL.videojuego;
-import MODEL.gestorDevolucion;
+import MODEL.gestorPagos;
 import MODEL.usuario;
 
 import javax.swing.JButton;
@@ -87,7 +87,7 @@ public class interfazDevolucion {
 		JButton confirmar = new JButton("Confirmar");
 		confirmar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				gestorDevolucion.devolverJuego(juego, usuario.getUsuario());
+				gestorPagos.solicitarReembolso(juego, usuario.getUsuario());
 				iuDevolucion.dispose();
 				interfazLibreria.main(new String[0],usuario);
 			}

@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 import SERVICE.DB_Connector;
 
-public class gestorLibreria {
+public class libreria {
 	
 	static DB_Connector con;
 

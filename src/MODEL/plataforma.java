@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 
 import SERVICE.DB_Connector;
 
-public class gestorTienda {
+public class plataforma {
 	
 	static DB_Connector con;
 	

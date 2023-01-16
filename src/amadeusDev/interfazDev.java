@@ -21,10 +21,10 @@ import javax.swing.SwingConstants;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import MODEL.gestorLibreria;
+import MODEL.libreria;
 import MODEL.videojuego;
 import MODEL.desarrollador;
-import MODEL.gestorTienda;
+import MODEL.plataforma;
 import VIEW.interfazAcerca;
 import VIEW.interfazLogin;
 import VIEW.interfazReporte;
@@ -98,7 +98,7 @@ public class interfazDev {
 		JList list = new JList();
 		DefaultListModel<String> model;
 		model = new DefaultListModel<>();
-		for (String nomJ : gestorLibreria.mostrarJuegosDev(desarrollador.getDev())) {
+		for (String nomJ : libreria.mostrarJuegosDev(desarrollador.getDev())) {
 			model.addElement(nomJ);
         }
 		list.setModel(model);
@@ -234,7 +234,7 @@ public class interfazDev {
 	            if (!arg0.getValueIsAdjusting()) {
 	            	String selected =list.getSelectedValue().toString();
 	            	sel=selected;
-	            	videojuego juego=gestorTienda.visualizarTienda(selected);
+	            	videojuego juego=plataforma.visualizarTienda(selected);
 	            	game=juego;
 	            	
 	            	ImageIcon imageIcon1 = new ImageIcon(interfazLogin.class.getResource("/img/"+juego.getID()+"_1.jpg"));

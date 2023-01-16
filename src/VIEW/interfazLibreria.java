@@ -17,9 +17,9 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-import MODEL.gestorLibreria;
+import MODEL.libreria;
 import MODEL.videojuego;
-import MODEL.gestorTienda;
+import MODEL.plataforma;
 import MODEL.usuario;
 import java.awt.Toolkit;
 import javax.swing.JTextArea;
@@ -104,7 +104,7 @@ public class interfazLibreria {
 		if(usuario.getPrem()==false) {
 			DefaultListModel<String> model;
 			model = new DefaultListModel<>();
-			for (String nomJ : gestorLibreria.mostrarLibreria(usuario.getUsuario())) {
+			for (String nomJ : libreria.mostrarLibreria(usuario.getUsuario())) {
 				model.addElement(nomJ);
 	        }
 			list.setModel(model);
@@ -112,7 +112,7 @@ public class interfazLibreria {
 		else {
 			DefaultListModel<String> model;
 			model = new DefaultListModel<>();
-			for (String nomJ : gestorLibreria.mostrarLibreriaPrem()) {
+			for (String nomJ : libreria.mostrarLibreriaPrem()) {
 				model.addElement(nomJ);
 	        }
 			list.setModel(model);
@@ -329,7 +329,7 @@ public class interfazLibreria {
 	            	logoA.setVisible(false);
 	            	String selected =list.getSelectedValue().toString();
 	            	sel=selected;
-	            	videojuego juego=gestorTienda.visualizarTienda(selected);
+	            	videojuego juego=plataforma.visualizarTienda(selected);
 	            	game=juego;
 	            	
 	            	ImageIcon imageIcon1 = new ImageIcon(interfazLogin.class.getResource("/img/"+juego.getID()+"_1.jpg"));

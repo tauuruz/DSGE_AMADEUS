@@ -7,7 +7,7 @@ import javax.swing.event.ListSelectionListener;
 
 import MODEL.gestorVideojuego;
 import MODEL.videojuego;
-import MODEL.gestorTienda;
+import MODEL.plataforma;
 import MODEL.usuario;
 
 import java.awt.Font;
@@ -203,7 +203,7 @@ public class interfazTienda {
 	            if (!arg0.getValueIsAdjusting()) {
 	            	String selected =list.getSelectedValue().toString();
 	            	sel=selected;
-	            	videojuego juego=gestorTienda.visualizarTienda(selected);
+	            	videojuego juego=plataforma.visualizarTienda(selected);
 	            	game=juego;
 	            	
 	            	ImageIcon imageIcon1 = new ImageIcon(interfazLogin.class.getResource("/img/"+juego.getID()+"_1.jpg"));
