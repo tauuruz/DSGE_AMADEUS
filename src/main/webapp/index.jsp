@@ -30,9 +30,6 @@
         </div>
         <a href=""> <input type="submit" value="Entrar" id="enviar">  </a>
     </form>
-    </td>
-    </tr>
-    </table>
     <h5>¿No tienes cuenta?</h5>
     <form action="Oyente_IU_Principal" method="get">
         <a href=""><button class="boton" type="submit" name="opcion" value="1">Registrate</button></a>

@@ -1,12 +1,11 @@
 package Amadeus.MODEL;
 
+import Amadeus.SERVICE.DB_Connector;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
-
-import Amadeus.SERVICE.DB_Connector;
 
 public class gestorCuenta {
 	static DB_Connector con;
