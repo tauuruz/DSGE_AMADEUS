@@ -9,6 +9,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/IU_Gestor_Pagos.css">
     <title>Comprar</title>
     <%
         //TODO: Implementar pago DLC
@@ -23,31 +25,32 @@
     %>
 </head>
 <body>
+<div id="CuadroInicio">
     <h3><strong>Juego a comprar:</strong> <%=juego.getNombre()%></h3>
     <h3 style="padding-left: 100px">Ingrese los datos de su tarjeta de credito: </h3>
     <form action="Oyente_Gestor_Pagos" method="post">
         <input type="hidden" name="juego" value="<%=juego.getNombre()%>">
         <input type="hidden" name="precio" value="<%=juego.getPrecio()%>">
-        <table style="padding-left: 125px">
+        <table>
             <tr>
-                <td>Numero de tarjeta:</td>
+                <td><span>Numero de tarjeta:</span></td>
                 <td><input type="text" name="numeroTarjeta" size="20" maxlength="20"></td>
             </tr>
             <tr>
-                <td>Fecha de vencimiento (mm/yy):</td>
+                <td><span>Fecha de vencimiento (mm/yy):</span></td>
                 <td><input type="text" name="fechaVencimiento" size="20" maxlength="5"></td>
                 <td>CVV</td>
                 <td><input type="text" name="cvv" size="3" maxlength="3"></td>
             </tr>
             <tr>
-                <td>Nombre del titular:</td>
+                <td><span>Nombre del titular:</span></td>
                 <td><input type="text" name="nombreTitular" size="30" maxlength="30"></td>
             </tr>
             <tr>
                 <td><strong>Total: </strong>$<%=juego.getPrecio()%></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Comprar"></td>
+                <td class="comprar"><a href=""><input class="comprar" type="submit" value="Comprar"></a></td>
             </tr>
         </table>
     </form>
@@ -56,5 +59,6 @@
             <button type="submit" name="cancelar" value="cancelar">Cancelar</button>
         </form>
     </td>
+</div>
 </body>
 </html>

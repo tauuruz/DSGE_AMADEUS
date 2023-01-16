@@ -12,6 +12,8 @@
 <html>
 <head>
     <title>Libreria</title>
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/IU_Libreria.css">
   <%
     PrintWriter wr = response.getWriter();
     //TODO: Cambiar a clase Videojuego
@@ -23,7 +25,7 @@
 <body>
     <form action="Oyente_Gestor_videojuegos" method="get">
       <h3 style="display: inline; padding-right: 200px;">Libreria</h3>
-      <button type="submit" name="opcion" value="3">Hazte Premium</button>
+      <a href=""><button type="submit" name="opcion" value="3">Hazte Premium</button></a>
     </form>
     <table id="Videojuegos" class="display">
       <thead>
@@ -31,7 +33,7 @@
       </thead>
       <tr>
         <td>
-          <table style="border: 1px solid black; border-collapse: collapse;">
+          <table class="tabla2">
             <% for (String juego : juegos) { %>
               <tr>
                 <td style="border: 1px solid black; border-collapse: collapse;" onclick="click"><%=juego%></td>
@@ -39,7 +41,7 @@
             <% } %>
           </table>
         </td>
-        <td style="border: 1px solid black; border-collapse: collapse;">
+        <td class="tabla2">
           Juego: <input type="text" id="juego" name="juego" value="" readonly>
         </td>
         <!--Mostrar informacion del videojuego seleccionado-->
@@ -59,11 +61,11 @@
       <tr>
         <td>
           <form action="Oyente_Gestor_videojuegos" method="get">
-            <button type="submit" name="opcion" value="1">Tienda</button>
-            <button type="submit" name="opcion" value="2">Noticias</button>
-            <button type="submit" name="opcion" value="4">Ver perfil</button>
-            <input type="hidden" id="juegoSeleccionado" name="juegoSeleccionado" value="">
-            <button type="submit" name="opcion" value="7">Ver DLC</button>
+            <a href=""><button type="submit" name="opcion" value="1">Tienda</button></a>
+            <a href=""><button type="submit" name="opcion" value="2">Noticias</button></a>
+            <a href=""><button type="submit" name="opcion" value="4">Ver perfil</button></a>
+            <a href=""><input type="hidden" id="juegoSeleccionado" name="juegoSeleccionado" value=""></a>
+            <a href=""><button type="submit" name="opcion" value="7">Ver DLC</button></a>
           </form>
         </td>
       </tr>

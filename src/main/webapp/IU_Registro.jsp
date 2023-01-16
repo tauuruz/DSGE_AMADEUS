@@ -8,58 +8,63 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/IU_Registro.css">
     <title>Registrarse</title>
 </head>
 <body>
 <h4>Has elegido formar parte de AMADEUS</h4>
 <h5>Para concluir el registro por favor llene todos lo campos</h5>
-<table>
+<div id="CuadroInicio">
+<table id="tabla">
     <tr>
         <td>
             <form action="Oyente_Gestor_Cuenta" method="post">
                 <table>
                     <tr>
-                        <td>Usuario</td>
-                        <td><input type="text" name="usuario" required></td>
+                        <td><span>Usuario</span></td>
+                        <td><input class="input2" type="text" name="usuario" required></td>
                     </tr>
                     <tr>
-                        <td>Nombre</td>
-                        <td><input type="text" name="nombre" required></td>
+                        <td><span>Nombre</span></td>
+                        <td><input class="input2" type="text" name="nombre" required></td>
                     </tr>
                     <tr>
-                        <td>Apellido Paterno</td>
-                        <td><input type="text" name="apellidoP" required></td>
+                        <td><span>Apellido Paterno</span></td>
+                        <td><input class="input2" type="text" name="apellidoP" required></td>
                     </tr>
                     <tr>
-                        <td>Apellido Materno</td>
-                        <td><input type="text" name="apellidoM" required></td>
+                        <td><span>Apellido Materno</span></td>
+                        <td><input class="input2" type="text" name="apellidoM" required></td>
                     </tr>
                     <tr>
-                        <td>Direccion</td>
-                        <td><input type="text" name="direccion" required></td>
+                        <td><span>Direccion</span></td>
+                        <td><input class="input2" type="text" name="direccion" required></td>
                     </tr>
                     <tr>
-                        <td>Telefono</td>
-                        <td><input type="text" name="telefono" required></td>
+                        <td><span>Telefono</span></td>
+                        <td><input class="input2" type="text" name="telefono" required></td>
                     </tr>
                     <tr>
-                        <td>Correo</td>
-                        <td><input type="text" name="correo" required></td>
+                        <td><span>Correo</span></td>
+                        <td><input class="input2" type="text" name="correo" required></td>
                     </tr>
                     <tr>
-                        <td>Contraseña</td>
-                        <td><input type="password" name="contrasena" required ></td>
+                        <td><span>Contraseña</span></td>
+                        <td><input class="input2" type="password" name="contrasena" required ></td>
                     </tr>
                     <tr>
-                        <td>Confirmar Contraseña</td>
-                        <td><input type="password" name="contrasena2" required></td>
+                        <td><span>Confirmar Contraseña</span></td>
+                        <td><input class="input2" type="password" name="contrasena2" required></td>
                     </tr>
                     <% if (request.getAttribute("error") != null) {
                         PrintWriter wr = response.getWriter();
                         wr.println("<tr><td colspan='2' style='color: red'>" + request.getAttribute("error") + "</td></tr>");
                     } %>
                     <tr>
-                        <td><input type="submit" name="Registrarse" value="Registrarse"></td>
+                        <td class="input3">
+                            <a href=""><input type="submit" name="Registrarse" value="Registrarse"></a>
+                        </td>
                     </tr>
                 </table>
             </form>
@@ -68,10 +73,11 @@
     <tr>
         <td>
             <form action="Oyente_Gestor_Cuenta" method="get">
-                <button type="submit" name="opcion" value="1" formnovalidate>Regresar</button>
+                <a href=""><button type="submit" name="opcion" value="1" formnovalidate>Regresar</button></a>
             </form>
         </td>
     </tr>
 </table>
+</div>
 </body>
 </html>

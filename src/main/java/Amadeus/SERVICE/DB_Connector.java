@@ -10,7 +10,7 @@ public class DB_Connector {
      private static final String driver = "com.mysql.cj.jdbc.Driver";
      private static final String user = "admin";
      private static final String password = "chachis2014";
-     private static final String url = "jdbc:mysql://localhost:3306/aydoo";
+     private static final String url = "jdbc:mysql://localhost:3306/DSGE";
      
     public DB_Connector() {
         conn = null;

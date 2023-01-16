@@ -12,6 +12,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/IU_Tienda.css">
     <title>Tienda</title>
     <%
         gestorVideojuego gestor = new gestorVideojuego();
@@ -25,50 +27,50 @@
     <h3>Bienvenido a la tienda</h3>
 </form>
 <table id="Videojuegos" class="display">
-    <thead>
+    <thead id="titulotabla">
     <th style="font-size: 24px">Juegos</th>
     </thead>
     <tr>
         <td>
-            <table style="border: 1px solid black; border-collapse: collapse;">
+            <table class="tabla">
                 <% for (videojuego juego : juegos) { %>
                 <tr>
-                    <td style="border: 1px solid black; border-collapse: collapse;" onclick="click"><%=juego.getNombre()%></td>
+                    <td onclick="click"><%=juego.getNombre()%></td>
                 </tr>
                 <% } %>
             </table>
         </td>
         <td>
             <form action="Oyente_Gestor_videojuegos" method="post">
-                <table style="border: 1px solid black; border-collapse: collapse;">
+                <table class="tabla">
                     <tr>
                         <td>
-                            Juego: <input type="text" id="juego" name="juego" value="" readonly required>
+                            <span>Juego:</span>  <input class="relleno" type="text" id="juego" name="juego" value="" readonly required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Precio: <input type="text" id="precio" name="precio" value="" readonly>
+                            <span>Precio: </span>  <input class="relleno" type="text" id="precio" name="precio" value="" readonly>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Genero: <input type="text" id="genero" name="genero" value="" readonly>
+                            <span>Genero: </span>   <input type="text" id="genero" name="genero" value="" readonly>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Desarrollador: <input type="text" id="desarrollador" name="desarrollador" value="" readonly>
+                            <span>Desarrollador: </span>   <input type="text" id="desarrollador" name="desarrollador" value="" readonly>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Categoria: <input id="categoria" name="categoria"  readonly>
+                            <span>Categoria: </span>    <input id="categoria" name="categoria"  readonly>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="submit" value="Comprar">
+                            <input id="boton" type="submit" value="Comprar">
                         </td>
                     </tr>
                 </table>
@@ -76,12 +78,12 @@
     <tr>
         <td>
             <form action="Oyente_Gestor_videojuegos" method="get">
-                <button type="submit" name="opcion" value="5" formnovalidate>Mostrar reseñas</button>
+                <a href=""><button type="submit" name="opcion" value="5" formnovalidate>Mostrar reseñas</button></a>
             </form>
         </td>
         <td>
             <form action="Oyente_Gestor_videojuegos" method="get">
-                <button type="submit" name="opcion" value="6">Regresar</button>
+                <a href=""><button type="submit" name="opcion" value="6">Regresar</button></a>
             </form>
         </td>
     </tr>

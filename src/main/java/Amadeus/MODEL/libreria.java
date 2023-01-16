@@ -29,7 +29,7 @@ public class libreria {
     				ResultSet rsJ=stJ.executeQuery(sql);
     				while (rsJ.next()) {
     		            String idJ=rsJ.getString("id_juego");
-    		            String sqlJ="SELECT * FROM juegos WHERE id_juego='"+idJ+"'";
+    		            String sqlJ="SELECT * FROM videojuego WHERE id_juego='"+idJ+"'";
     		            try {
     	    	    		Statement stJu=reg.createStatement();
     	    				ResultSet rsJu=stJu.executeQuery(sqlJ);
@@ -56,7 +56,7 @@ public class libreria {
     	con = new DB_Connector();
         Connection reg = con.getConnection();
         try {
-        	String sqlU="SELECT * FROM juegos";
+        	String sqlU="SELECT * FROM videojuego";
     		Statement st=reg.createStatement();
     		ResultSet rs=st.executeQuery(sqlU);
     		while(rs.next()) {
@@ -79,7 +79,7 @@ public class libreria {
     		ResultSet rs=st.executeQuery(sqlU);
     		if(rs.next()) {
     			String nombreDev=rs.getString("nombre");
-    			String sql="SELECT * FROM juegos WHERE desarrollador='"+nombreDev+"'";
+    			String sql="SELECT * FROM videojuego WHERE desarrollador='"+nombreDev+"'";
     	    	try {
     	    		Statement stJ=reg.createStatement();
     				ResultSet rsJ=stJ.executeQuery(sql);

@@ -12,6 +12,8 @@
 <html>
 <head>
     <title>Noticias</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/IU_Gestor_Noticias.css">
   <%
     gestorNoticias gestor = new gestorNoticias();
     List<noticia> noticias = gestor.visualizarNoticias();

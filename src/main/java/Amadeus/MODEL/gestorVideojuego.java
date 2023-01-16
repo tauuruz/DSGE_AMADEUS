@@ -16,7 +16,7 @@ public class gestorVideojuego {
     	List<videojuego> juegos = new ArrayList<videojuego>();
     	con = new DB_Connector();
         Connection reg = con.getConnection();
-        String sql="SELECT * FROM juegos";
+        String sql="SELECT * FROM videojuego";
     	try {
     		Statement st=reg.createStatement();
 			ResultSet rs=st.executeQuery(sql);
