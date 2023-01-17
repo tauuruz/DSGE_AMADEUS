@@ -1,26 +1,35 @@
 body{
-    background-color: rgb(238, 149, 17);
+    background-color: rgb(210, 105, 0);
 }
 
-#titulo{
-    background-color: rgb(238, 149, 17);
-    font-weight: bold;
-    font-size: 3em;
+header{
+	margin-left:4em;
+	margin-right:4em;
+	margin-top:1em;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    color: rgb(0, 0, 0);
+    background: rgba(14, 185, 185, 0.9);
+    box-shadow: 0 15px 25px 25px rgb(0, 0, 0);
+}
+
+#Videojuegos{
+	margin:0 auto;
 }
 
 .display{
-    margin-top: 2em;
-    width: 400px;
+    margin-top: 1em;
+    width: 1000px;
     height: 500px;
-    background-color: blueviolet;
     margin-left: 3em;
-    background: rgba(0, 0, 0, .6);
-    box-shadow: 0 15px 25px 25px rgba(20, 221, 228, 0.856);
+    background: rgba(14, 185, 185, 0.9);
+    box-shadow: 0 15px 25px 25px rgb(0, 0, 0);
     overflow: auto;
 }
 
 .tabla{
+	text-align:center;
     background-color: rgba(57, 241, 241, 0.6);
     font-weight: bold;
     border-collapse: collapse;
@@ -29,38 +38,52 @@ body{
     margin-right: 5em;
 }
 
+
+.tabla td{
+	
+	
+	padding-right:1em;
+}
+
 .tabla tr{
     border: 1px solid black;
 }
+
 
 .tabla label{
     font-weight: bold;
     margin-left: 1em;
 }
 
+
+
 .relleno{
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-right: 1em;
+    background: transparent;
+	outline: none;
+	border:none;
 }
 
-#boton{
-    margin-top: 1em;
-    margin-left: 5em;
-    margin-bottom: 1em;
+.boton1 a:hover{  
     font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff0000,
+                0 0 25px #ff0000,
+                0 0 50px #ff0000,
+                0 0 100px #ff0000;
 }
 
 
-a{
+.boton2 a{
 margin-left: 10em;
 }
 
-a:hover{  
+.boton2 a:hover{  
     font-weight: bold;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+    box-shadow: 0 0 5px #1b03f4,
+                0 0 25px #1b03f4,
+                0 0 50px #1b03f4,
+                0 0 100px #1b03f4;
 }

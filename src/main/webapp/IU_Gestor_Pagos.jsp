@@ -24,7 +24,7 @@
         }
     %>
 </head>
-<body>
+<body >
 <div id="CuadroInicio">
     <h3><strong>Juego a comprar:</strong> <%=juego.getNombre()%></h3>
     <h3 style="padding-left: 100px">Ingrese los datos de su tarjeta de credito: </h3>

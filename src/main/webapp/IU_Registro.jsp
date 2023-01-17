@@ -13,9 +13,9 @@
     <title>Registrarse</title>
 </head>
 <body>
-<h4>Has elegido formar parte de AMADEUS</h4>
-<h5>Para concluir el registro por favor llene todos lo campos</h5>
-<div id="CuadroInicio">
+<div id="CuadroInicio">    
+    <h4>Has elegido formar parte de AMADEUS</h4>
+    <h5>Para concluir el registro por favor llene todos lo campos</h5>
 <table id="tabla">
     <tr>
         <td>

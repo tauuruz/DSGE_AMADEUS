@@ -14,12 +14,12 @@
     <title>Informacion de la cuenta</title>
 </head>
 <body>
+<div id="CuadroInicio">
 <h4>Informacion de la cuenta:</h4>
 <%
     gestorCuenta gestor = new gestorCuenta();
     usuario user = gestor.visualizarCuenta(request.getSession().getAttribute("usuario").toString());
 %>
-<div id="CuadroInicio">
 <table id="tabla">
     <tr>
         <td>

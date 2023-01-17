@@ -24,16 +24,19 @@
 </head>
 <body>
     <form action="Oyente_Gestor_videojuegos" method="get">
-      <h3 style="display: inline; padding-right: 200px;">Libreria</h3>
-      <a href=""><button type="submit" name="opcion" value="3">Hazte Premium</button></a>
+    <header>
+    <nav>
+      <h3 style="display: inline; ">Libreria</h3>
     </form>
+    </nav>
+    </header>
     <table id="Videojuegos" class="display">
       <thead>
         <th>Tus Juegos</th>
       </thead>
       <tr>
         <td>
-          <table class="tabla2">
+          <table >
             <% for (String juego : juegos) { %>
               <tr>
                 <td style="border: 1px solid black; border-collapse: collapse;" onclick="click"><%=juego%></td>
@@ -41,7 +44,7 @@
             <% } %>
           </table>
         </td>
-        <td class="tabla2">
+        <td>
           Juego: <input type="text" id="juego" name="juego" value="" readonly>
         </td>
         <!--Mostrar informacion del videojuego seleccionado-->
@@ -66,6 +69,7 @@
             <a href=""><button type="submit" name="opcion" value="4">Ver perfil</button></a>
             <a href=""><input type="hidden" id="juegoSeleccionado" name="juegoSeleccionado" value=""></a>
             <a href=""><button type="submit" name="opcion" value="7">Ver DLC</button></a>
+            <a href=""><button type="submit" name="opcion" value="3">Hazte Premium</button></a>
           </form>
         </td>
       </tr>

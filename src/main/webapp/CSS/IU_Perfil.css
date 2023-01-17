@@ -1,23 +1,26 @@
 body{
-    background-color: rgba(228, 121, 20);
-    
+    background-color: rgb(210, 105, 0);
 }
 
 h4{
-    margin-top: 3em;
-    margin-left: 15em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    margin: 0;
+    margin-bottom: 1em;
+    background: rgba(14, 185, 185, 0.8);
+    color: #000000;
+    border-bottom: 4px black solid;
+    font-size: 30px;
+    font-family:serif;
+    font-weight: bold;
 }
 
+
 #CuadroInicio{
-    margin-left: 25em;
-    margin-bottom: 3em;
-    width: 500px;
-    height: 400px;
+    margin:50 auto;
+    width: 510px;
+    height: 500px;
     padding: 20px;
-    background: rgba(107, 102, 102, 0.8);
-    box-shadow: 0 15px 25px 25px rgba(19, 207, 198, 0.8);
+    background: rgba(14, 185, 185, 0.8);
+    box-shadow: 0 15px 25px 25px rgba(0,0,0);
 }
 
 
@@ -30,7 +33,7 @@ span{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(8, 8, 8);
     border: none;
-    border-bottom: 2px solid rgb(231, 94, 2);
+    border-bottom: 2px solid rgb(0,0,0);
     background: transparent;
     outline: none;
 }
@@ -49,9 +52,9 @@ span{
 a:hover{  
     font-weight: bold;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+    box-shadow: 0 0 5px #1b03f4,
+                0 0 25px #1b03f4,
+                0 0 50px #1b03f4,
+                0 0 100px #1b03f4;
 }
 

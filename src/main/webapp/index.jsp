@@ -9,6 +9,9 @@
 </head>
 
 <body>
+<header>
+	<h1>Bienvenido</h1>
+</header>
 <div id="CuadroInicio">
 
 

@@ -1,6 +1,6 @@
 body{
-    background-color: rgba(228, 121, 20);
-    
+    background-image:url("images/Fondo.jpeg");
+    background-size:cover;
 }
 
 #CuadroInicio{
@@ -10,8 +10,8 @@ body{
     width: 500px;
     height: 400px;
     padding: 20px;
-    background: rgba(107, 102, 102, 0.8);
-    box-shadow: 0 15px 25px 25px rgba(19, 207, 198, 0.8);
+    background: rgba(14, 185, 185, 0.9);
+    box-shadow: 0 15px 25px 25px rgba(9, 21, 180, 0.856);
 }
 
 #CuadroInicio td{
@@ -41,12 +41,12 @@ button, a input{
 a:hover{  
     font-weight: bold;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+    box-shadow: 0 0 5px #1b03f4,
+                0 0 25px #1b03f4,
+                0 0 50px #1b03f4,
+                0 0 100px #1b03f4;
 }
 
 button{
-    margin-left: 39em;
+    margin-left: 30em;
 }

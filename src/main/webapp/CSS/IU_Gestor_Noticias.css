@@ -1,13 +1,62 @@
 body{
-    background-color: rgba(228, 121, 20);
-    
+    background-color: rgb(210, 105, 0);
 }
+
 
 a:hover{  
     font-weight: bold;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03e9f4,
-                0 0 25px #03e9f4,
-                0 0 50px #03e9f4,
-                0 0 100px #03e9f4;
+    box-shadow: 0 0 5px #1b03f4,
+                0 0 25px #1b03f4,
+                0 0 50px #1b03f4,
+                0 0 100px #1b03f4;
 }
+
+
+#CuadroInicio{
+	width: 1000px;
+    height: 80%;
+    background: rgba(14, 185, 185, 0.9);
+    box-shadow: 0 15px 25px 25px rgb(0,0,0);
+    overflow: auto;
+    margin: 0 auto;
+}
+
+
+#CuadroInicio table{
+    text-align: center;
+    
+    
+    
+    padding: 50px;
+    
+}
+#noticias td{
+	padding-left:3em;
+}
+
+#Cuadro{
+	width: 997px;
+    height: 45px;
+	text-align: center;
+	background: rgba(14, 185, 185, 0.9);
+    box-shadow: 0 15px 25px 25px rgb(0,0,0);
+	margin: 50 auto;
+}
+
+#Cuadro button{
+	font-size:30px;
+}
+
+
+#Cuadro a:hover{
+	font-size:30px;
+	font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #1b03f4,
+                0 0 25px #1b03f4,
+                0 0 50px #1b03f4,
+                0 0 100px #1b03f4;
+}
+
+
