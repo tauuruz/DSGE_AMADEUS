@@ -10,5 +10,6 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="C:/Program Files/Apache Software Foundation/Tomcat 10.0/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="D:/Google Drive/Eros/UAM-C/mysql-connector-j-8.0.31/mysql-connector-j-8.0.31.jar"/>
+	<classpathentry kind="lib" path="D:/Google Drive/Eros/UAM-C/javax.servlet.jar/javax.servlet.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
